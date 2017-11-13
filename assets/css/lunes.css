@@ -1,0 +1,117 @@
+#headerwrap {
+
+	background-image: url("../../assets/img/dialunesbanner.png");
+
+	background-size: cover;
+
+	margin-top: 38px;
+	min-height: 600px;
+	padding-top: 260px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+.row img{
+	width: 500px;
+}
+.dialunes{
+	display: block;
+	text-align: center;
+	padding-left: 40%;
+}
+.lunestitulo{
+	padding-left: 10px;
+	font-family: 'museo700';
+	font-size: 45px;
+	color: #0099cc;
+}
+.container ul{
+	text-align: center;
+}
+.semana ul{
+	list-style:none;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+.semana li{
+	display: inline-block;
+}
+.semana li a{
+	float: left;
+	text-align: center;
+	padding-top: 22px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-family: 'museo700';
+	font-size: 20px;
+}
+.semana li a:hover{
+	border-bottom: solid 3px #f9ea18;
+}
+.cuadromorado{
+	
+	
+	box-sizing: border-box;
+	display: block;
+	margin-right: 20px;
+	text-align: center;
+	justify-content: space-between;
+		width: 276px; 
+     height: 160px; 
+     background: #428bca;
+     background-color: #cc0099;
+     float: left;
+     white-space: pre-line;
+     margin-top: 20px;
+
+}
+.cuadromorado p{
+	color: #f9ea18;
+	font-family: 'chichanormal';
+	font-size: 18px;
+	padding-top: 35px;
+}
+.contenedor3{
+	margin: auto;
+	width:600px;
+	display: block;
+    content: " ";
+	text-align: center;
+}
+#portfoliowrap2 {
+    padding-top: 0px;
+    margin-bottom: 0px;
+    display: block;
+    text-align: center;
+}
+figure{
+margin: 0;
+display: inline-block;
+position: relative;
+overflow: hidden;
+}
+figcaption{
+  color: white;
+  transition: all 0.3s;
+  position: absolute;
+  left:0px;
+  bottom: -400px;
+  background:rgba(102, 0, 102, 1);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: 'chichanormal';
+  text-align: left;
+}
+figure:hover figcaption{
+  bottom: 0px;
+}
+.fechas{
+  width: 30%;
+  float: left;
+  overflow: hidden;
+  margin: 10px;
+  display: block;
+  text-align: center;
+}

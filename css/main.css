@@ -1,0 +1,108 @@
+body{
+	padding: 0;
+	margin:0;/* Anula el margen por defecto del objeto body */
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;/* tipo de letra */
+	font-size:18px;/* tamaño de la fuente */
+	color:#3E3D3D;
+	line-height:28px;/* Alto de línea (interlineado) */
+	z-index: 980000;
+}
+h1 a{
+		color: #ffffff;
+	}
+img{
+	display: block;
+}
+a{
+	text-decoration: none;
+}
+#logo{
+	float:left;/* El objeto se pega a la izquierda y 
+	arrastra a los demas objetos que le siguen por la derecha*/}
+.container{
+	width:100%;/*antes era 1700px por sea caso*/
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	/* Al ser ambos màrgenes automàticos, ambos serían iguales, por
+	lo que se centrarían */	
+}
+#menu{
+	float:right;/* El objeto se pega a la derecha y 
+	arrastra a los demas objetos que le siguen por la izquierda*/
+}
+#header {
+	padding: 15px;
+	display: table;/* Para que tenga el comportamiento de una tabla */
+	width:100%;/* Para que el valor de su ancho sea igual 
+	que el de su contenedor */
+	box-sizing: border-box;/* Para que el valor de padding no incremente
+	el ancho total */
+	position: fixed;
+	/*top: 38px;*/
+	z-index: 10;
+	padding-top: 25px;
+	background-color: #00005c;
+}
+.logochicha{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.submenus{
+	list-style: none;
+	margin: 32px;
+}
+.submenus li{
+	    float: left;
+}
+.submenus li a{
+	padding:5px 15px;
+	display:block;
+	color:#F4F4F4;
+	text-transform: uppercase;
+	}
+.img-responsive{
+	width:100%;
+	height:auto;
+	}
+#banner{
+	margin: 0;
+	/*padding-top: 106px;*/
+	position: absolute;
+	z-index: 1;
+	visibility:visible;
+	width:100%;
+	height:auto;
+	display: block;
+	/*vertical-align: top / middle / bottom;*/
+	padding-top: 80px;
+	}
+#frase-chicha{
+	margin: 0;
+	/*padding-top: 20px;*/
+	position: relative;
+	z-index: 2;
+	visibility:visible;
+	top: 290px;
+	box-sizing: border-box;
+	/*vertical-align: top / middle / bottom;*/
+	text-align: center;
+}
+#frase-chicha img{
+	width: 720px;
+	height: auto;
+}
+#bajada{
+	top: 310px;
+	position: relative;
+	z-index: 1;
+	visibility:visible;
+	text-align: center;
+}
+#bajada{
+color:#fff;
+font-size: 25px;
+}
+#descripcioninicio{
+	color: #000000;
+}

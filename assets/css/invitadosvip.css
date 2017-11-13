@@ -1,0 +1,34 @@
+#headerwrap {
+
+    background-image: url("../img/bannervip.png");
+
+    background-size: cover;
+
+    margin-top: 38px;
+    min-height: 600px;
+    padding-top: 260px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.bajada2 {
+    padding-top: 15px;
+    box-sizing: border-box;
+    font-family: 'bw_modelica_lgcregular';
+}
+.vip{
+	padding: 30px;
+	float: left;
+	overflow: hidden;
+
+}
+.vip2{
+text-align: left;
+
+}
+.vip p{
+	font-family: 'bw_modelica_lgcregular';
+	padding-top: 37px;
+}
+.titulovip{
+	padding-bottom: 20px;
+}

@@ -1,0 +1,775 @@
+
+
+/*	################################################################
+
+	Author: Carlos Alvarez
+	URL: http://alvarez.is
+
+	Project Name: SOLID - Bootstrap 3 Theme
+	Version: 1.0
+	URL: http://alvarez.is
+	
+################################################################# */ 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+@import url("prettyPhoto.css") screen;
+@import url("hoverex-all.css") screen;
+
+/*	################################################################
+	1. GENERAL STRUCTURES
+################################################################# */
+	* { 
+		margin: 0;
+		padding: 0px;
+	} 
+
+body { 
+	background: #ffffff; 
+	margin: 0; 
+	height: 100%; 
+	color: #384452;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+h3{
+	line-height: 32px;
+}
+
+p { 
+	padding: 0; 
+	margin-bottom: 12px; 
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	font-size: 14px; 
+	line-height: 24px;
+	line-height: 22px;
+	color: #384452; 
+	margin-top: 10px; 
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+a { 
+	padding: 0;
+	margin: 0;
+	text-decoration: none; 
+	-webkit-transition: background-color .4s linear, color .4s linear;
+	-moz-transition: background-color .4s linear, color .4s linear;
+	-o-transition: background-color .4s linear, color .4s linear;
+	-ms-transition: background-color .4s linear, color .4s linear;
+	transition: background-color .4s linear, color .4s linear;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color:#01b2fe;
+}
+
+::-moz-selection  {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+::selection {
+	color: #fff;
+	text-shadow:none;
+	background:#2B2E31;
+}
+
+.centered {
+	text-align: center
+}
+
+/*	################################################################
+	BOOTSTRAP MODIFICATIONS & TWEAKS
+################################################################# */
+.navbar {
+	min-height: 100px;
+	padding-top: 10px;
+	margin-bottom: 0px;
+}
+.navbar-collapse{
+	padding-top: 20px;
+}
+.logochicha{
+	padding: 10px 0;
+	width: 68px;
+	height: auto;
+}
+.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+}
+
+.navbar-header .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: white;
+	font-weight: 700;
+	font-size: 13px;
+	font-family: 'museo700';
+	letter-spacing: 2px;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #00b3fe;
+	color: #00c5f6;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #f9ea18;
+	background-color: transparent;
+}
+
+.navbar-default {
+	background-color: #00005f;
+	background-color: #00005b;
+	border-color: transparent;
+}
+
+.dropdown-menu {
+	background: #384452;
+	font-family: 'museo700';
+}
+
+.dropdown-menu > li > a {
+	color: white;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.btn-theme {
+  color: #fff;
+  background-color: #384452;
+  border-color: #384452;
+  margin: 4px;
+}
+.btn-theme:hover,
+.btn-theme:focus,
+.btn-theme:active,
+.btn-theme.active,
+.open .dropdown-toggle.btn-theme {
+  color: #fff;
+  background-color: #00b3fe;
+  border-color: #00b3fe;
+}
+
+.dmbutton:hover,
+.dmbutton:active,
+.dmbutton:focus{
+	color: #ffffff;
+	background-color: #222222;
+	border-color: #ffffff;
+}
+.dmbutton {
+	background:rgba(0, 0, 0, 0);
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding-top: 1.025rem;
+	padding-right: 2.25rem;
+	letter-spacing:0.85px;
+	padding-bottom: 1.0875rem;
+	padding-left: 2.25rem;
+	font-size: 1.55rem;
+	cursor: pointer;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 1.25rem;
+	text-decoration: none;
+	text-align: center;
+	display: inline-block;
+	-webkit-transition: background-color 300ms ease-out;
+	-moz-transition: background-color 300ms ease-out;
+	transition: background-color 300ms ease-out;
+	-webkit-appearance: none;
+	font-weight: normal !important;
+}
+
+.mtb {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.mb {
+	margin-bottom: 60px;
+}
+
+.mt {
+	margin-top: 60px;
+}
+
+.hline {
+	border-bottom: 2px solid #384452;
+}
+
+.hline-w {
+	border-bottom: 2px solid #ffffff;
+	margin-bottom: 25px;
+}
+/*	################################################################
+	SITE WRAPS
+################################################################# */
+
+#headerwrap {
+
+	background-image: url("../../assets/img/ciudadchicha.png");
+	background-position: center;
+	background-size: cover;
+	margin-top: 38px;
+	min-height: 920px;
+	padding-top: 260px;
+	padding-bottom: 0px;
+	text-align: center;
+}
+
+#headerwrap h3, h5 {
+	color: white;
+	font-weight: 400;
+}
+
+#headerwrap h1 {
+	color: white;
+	margin-bottom: 25px;
+}
+
+#headerwrap .img-responsive {
+	margin: 0 auto;
+}
+
+/* Services Wrap */
+#service {
+	padding-top: 100px;
+	padding-bottom: 80px;
+	background: #ff0099;
+}
+
+#service i {
+	color: #00b3fe;
+	font-size: 60px;
+	padding: 15px;
+}
+
+/* Portfolio Wrap */
+#portfoliowrap {
+	padding-top: 100px;
+	margin-bottom: 80px;
+	display: block;
+	text-align: center
+}
+
+#portfoliowrap h3 {
+	margin-bottom: 25px;
+}
+
+.portfolio {
+	padding:0 !important;
+	margin:0 !important;
+	display:block;
+}
+
+
+.portfolio-item .title:before {border-radius:0; display:none}
+.portfolio-item p {margin:0px 0 30px;}
+.portfolio-item h3 {margin:-10px 0 10px; font-size:16px; text-transform:uppercase;}
+
+
+.tpl6 h3
+{
+	color:#fff;
+	margin:0;
+	padding:40px 5px 0;
+	font-size:16px;
+	text-transform:uppercase;
+}
+.tpl6 .dmbutton
+{
+	display:inline-block;
+	margin:30px 5px 20px 5px;
+	font-size:13px;
+}
+
+.tpl6 .bg
+{
+	height:100%;
+	width:100%;
+	background-color:#00b3fe;
+	background-color:rgba(0,179,254,.9);
+	text-align:center;
+}
+
+/* Testimonials Wrap */
+#twrap {
+	background: url(../img/t-back.jpg) no-repeat center top;
+	margin-top: 0px;
+	padding-top:60px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 450px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#twrap i {
+	font-size: 50px;
+	color: white;
+	margin-bottom: 25px;
+}
+
+#twrap p {
+	color: white;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+/* clients logo */
+#cwrap {
+	background: #f7f7f7;
+	margin-top: 0px;
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+#cwrap h3 {
+	margin-bottom: 60px;
+}
+
+/* Footer */
+#footerwrap {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: #384452;
+}
+
+#footerwrap p {
+	color: #bfc9d3;
+}
+
+#footerwrap h4 {
+	color: white;
+}
+
+#footerwrap i {
+	font-size: 30px;
+	color: #bfc9d3;
+	padding-right: 25px;
+}
+
+#footerwrap i:hover {
+	color: #00b3fe
+}
+
+/*	################################################################
+	PAGE CONFIGURATIONS
+################################################################# */
+/* General Tweaks */
+
+#blue {
+	background: #00b3fe;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+#blue h3 {
+	color: white;
+	margin-left: 15px;
+}
+
+.ctitle {
+	color: #00b3fe;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+csmall {
+	font-size: 12px;
+	color: #b3b3b3;
+}
+csmall2 {
+	font-size: 12px;
+	color: #f39c12
+}
+
+.spacing {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.badge-theme {
+	background: #00b3fe;
+}
+
+/* Contact Page */
+#contactwrap {
+	background: url(../img/contact.jpg) no-repeat center top;
+	margin-top: -60px;
+	padding-top:0px;
+	text-align:center;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 400px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Blog Page */
+.popular-posts { 
+	margin: 0px;
+	padding-left: 0px;
+	}
+	
+.popular-posts li {
+	list-style: none; 
+	margin-bottom: 20px; 
+	min-height: 70px;
+}
+.popular-posts li a, 
+.popular-posts li a:hover {
+	color:#2f2f2f; 
+	text-decoration: none;
+	}
+	
+.popular-posts li img {
+	float: left; 
+	margin-right: 20px;
+	}
+	
+.popular-posts li em {
+	font-family: 'Lato', sans-serif;
+	font-size: 12px;
+	color: #b3b3b3
+	}
+
+.popular-posts p {
+	line-height: normal;
+	margin-bottom: auto;
+}	
+
+.share i {
+	padding-right: 15px;
+	font-size: 18px;
+}
+/*---nuevosstyles*/
+.logointro{
+	height: 120px;
+	width: auto;
+	padding-bottom: 15px;
+}
+.encuentro{
+	width: 416px;
+	height: auto;
+}
+.titularblanco{
+	color: #fff;
+	font-family: 'museo700';
+	color: #ffdd31;
+	color: #f9ea18;
+	font-size: 26px;
+}
+.bajada{
+	font-family: 'bw_modelica_lgcregular';
+}
+.descripcion{
+	color: #fff;
+	padding-top: 10px;
+	font-family: 'bw_modelica_lgcregular';
+}
+.negrita{
+	color: #000;
+	font-family: 'bw_modelica_lgcbold';
+}
+.versiones img{
+	padding: 5px;
+}
+.fa{
+	color: white;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	    border-bottom: solid 3px #ff0099;
+}
+.redessocialesuno a i{
+padding-left: 1px;
+}
+.redessocialesuno a i:hover{
+	color: #00c5f6;
+	transition: 0.6s;
+}
+.titularceleste{
+width: 380px;
+height: auto;
+padding-bottom: 35px;
+}
+.row{
+	text-align: center;
+}
+.contenedor{
+	margin: auto;
+	width:900px;
+	display: table;
+    content: " ";
+	text-align: center;
+}
+.contenedor2{
+	margin: auto;
+	width:1100px;
+	display: table;
+    content: " ";
+	text-align: center;
+}
+.invitados{
+	width: 30%;
+	float: left;
+	overflow: hidden;
+	margin: 10px;
+	display: block;
+	text-align: center;
+}
+.padded{
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.canon{
+	height: 35px;
+}
+.vm{
+	height: 55px;
+}
+.codigo{
+	height: 90px;
+}
+.tallercuatro{
+	height: 90px;
+}
+.wacom{
+	height: 90px;
+}
+.links ul li{
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.links{
+	text-align: center;
+	padding: 45px 0;
+background-color: #000000;
+color: #ffffff;
+box-sizing: border-box;}
+.links p{
+	text-align: left;
+	line-height: 1.6em;
+	cursor: pointer;
+}
+.links h3{
+	text-align: left;
+	font-size: 15px;
+	cursor: pointer;
+}
+.introauspicios{
+	padding-bottom: 40px;
+	font-family: 'museo700';
+	color: #0099cc;
+	box-sizing: border-box;
+}
+.auspicios img{
+	padding: 0 30px;
+	box-sizing: border-box;
+}
+h1, .h1, h2, .h2, h3, .h3 {
+	margin:0;
+	font-family: 'museo700';
+}
+
+.flex-caption img{
+	position: absolute;
+	top: 8%;
+	left: 28%;
+}
+.flexslider .slides .flex-caption img{
+	width: 45%;
+}
+.links p{
+	font-family: 'museo300';
+	color: #fff;s
+}
+.bajada{
+	padding-top: 10px;
+	box-sizing: border-box;
+}
+.patrocinador{
+	text-align: center;
+}
+.patrocinador h2{
+	padding: 25px;
+	color: #0099cc;
+	box-sizing: border-box;
+}
+.padded2{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	box-sizing: border-box;
+}
+.sede{
+	padding-right: 5px;
+}
+.sedes span, .sedes map{
+width: 33.3%;
+text-align: center;
+display: block;
+float: left;
+overflow: hidden;
+margin: auto;
+}
+.map{
+	display: block;
+	float: left;
+	overflow: hidden;
+	padding: 17px 156px 0;
+}
+.map2 span{
+	display: block;
+	float: left;
+	overflow: hidden;
+	padding: 10px 10px 0;
+	width: 33.3%;
+
+}
+.sedename{
+	font-family: 'museo300';
+	color: #fff;
+}
+
+
+.google-maps {
+    position: relative;
+    padding-bottom: 25%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+    }
+    .google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+    }
+ .google{
+ 	    background: #b0bac8;
+ 	    background: #000;
+ }
+#contactos{
+	font-family: 'chichanormal';
+	color: #ffff00;
+	font-size: 25px;
+}
+.links .redes img{
+	height: 50px;
+	float: left;
+	overflow: hidden;
+	padding-top: 7px;
+	padding-right: 7px; 
+}
+figure{
+margin: 0;
+display: inline-block;
+position: relative;
+overflow: hidden;
+}
+figcaption{
+	color: white;
+	transition: all 0.3s;
+	position: absolute;
+	left:0px;
+	bottom: -400px;
+	background:rgba(102, 0, 102, 1);
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	font-family: 'chichanormal';
+	text-align: left;
+}
+figure:hover figcaption{
+	bottom: 0px;
+}
+figure .dos{
+	background:rgba(7, 179, 222, 1);
+}
+figure .tres{
+	background:rgba(199, 199, 2, 1);
+}
+figure .cuatro{
+	background:rgba(199, 199, 2, 1);
+}
+figure .cinco{
+	background:rgba(102, 0, 102, 1);
+}
+figure .seis{
+	background:rgba(7, 179, 222, 1);
+}
+.modelica{
+	font-family: 'bw_modelica_lgcbold';
+}
+.carlosdulanto{
+	color: #ffff00;
+	text-align: left;
+	font-size: 15px;
+}
+.fecha{
+	font-family: 'museo300';
+	font-size: 13px;
+}
+.meapunto{
+	background: #000;
+	padding: 5px;
+	text-align: right;
+}
+.boton {
+padding: 18px 20px; /*espacio alrededor texto*/
+background-color: #1383f5; /*color botón*/
+color: #ffffff; /*color texto*/
+text-decoration: none; /*decoración texto*/
+text-transform: uppercase; /*capitalización texto*/
+font-family: 'museo300'; /*tipografía texto*/
+font-size: 16px;
+position: absolute;
+top: 85%;
+left: 67%;}
+.boton:hover{
+	color: #ffff00;
+}
+.background{
+	background: #000;
+}
