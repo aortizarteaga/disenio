@@ -1,4 +1,4 @@
-# PROYECTO LIMA VISUAL
+# PROYECTO DEISEÑO
 
 ### Acerca del proyecto
 
